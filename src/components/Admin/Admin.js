@@ -4,7 +4,7 @@ import './Admin.scss';
 import { FaBars } from "react-icons/fa";
 
 import {Outlet} from "react-router-dom";
-
+import PerfectScrollbar from 'react-perfect-scrollbar'
 // import { ToastContainer} from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 const Admin = (props) => {
@@ -20,8 +20,9 @@ const Admin = (props) => {
                 </div>
 
                 <div className='admin-main'>
-                    <Outlet/>
-
+                    <PerfectScrollbar>
+                        <Outlet/>
+                    </PerfectScrollbar>
                 </div>
                 
             </div>

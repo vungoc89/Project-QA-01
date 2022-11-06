@@ -43,7 +43,7 @@ const ManageUser = (props) => {
 
     const fetchListUsersWithPaginate = async (page) => {
         let res = await getUserWithPaginate(page, LIMIT_USER); 
-        console.log(res); 
+        // console.log(res); 
         if(res.EC === 0){
             console.log('res.data: ', res.DT.users);
             setListUsers(res.DT.users);
@@ -54,7 +54,7 @@ const ManageUser = (props) => {
     const handleClickBtnUpdate = (user) =>{
         setShowModalUpdateUser(true);
         setDataUpdate(user);
-        console.log('update user: ', user);
+        // console.log('update user: ', user);
     }
     // ModalUpdateUser: Xu ly khi click vao mot item 2 lan(lan 1 thi data hien ra, lan 2 thi data lai ko hien ra)
     const resetUpdateData = () => {

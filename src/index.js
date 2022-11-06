@@ -15,6 +15,8 @@ import '../node_modules/nprogress/nprogress.css';
 
 import { BrowserRouter } from "react-router-dom";
 import Layout from './Layout';
+
+import 'react-perfect-scrollbar/dist/css/styles.css';
 // import { Provider } from 'react-redux';
 // import App from './App';
 // import User from './components/User/User';

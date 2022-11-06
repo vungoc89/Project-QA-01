@@ -1,4 +1,6 @@
 .admin-container{
+    // height: 500px;
+    overflow: scroll;
     display: flex;
     .admin-sidebar{
         .pro-sidebar{
@@ -13,6 +15,7 @@
             border: 1px solid green;
         }
         .admin-main{
+            height: calc(100vh - 40px);
             .user-pagination{
                 display: flex;
                 justify-content: center;
