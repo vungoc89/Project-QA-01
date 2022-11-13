@@ -17,6 +17,7 @@ import { BrowserRouter } from "react-router-dom";
 import Layout from './Layout';
 
 import 'react-perfect-scrollbar/dist/css/styles.css';
+import "react-awesome-lightbox/build/style.css";
 // import { Provider } from 'react-redux';
 // import App from './App';
 // import User from './components/User/User';

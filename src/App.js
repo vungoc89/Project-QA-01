@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import {Outlet} from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { increaseCounter, decreaseCounter } from './redux/action/counterAction';
+import PerfectScrollbar from 'react-perfect-scrollbar';
 const App = () => {
   const count = useSelector(state => state.counter.count);
   const dispatch = useDispatch();
@@ -23,7 +24,9 @@ const App = () => {
       </div>
       <div className='app-content'>
         {/* Outlet la tin hieu chi dinh cho cac link user va admin duoc hien thi(here) khi cac link do click*/}
-        <Outlet></Outlet>
+        <PerfectScrollbar>
+            <Outlet/>
+        </PerfectScrollbar>
         {/* <Outlet/> */}
       </div>
     </div>
