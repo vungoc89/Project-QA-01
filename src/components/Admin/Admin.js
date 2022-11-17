@@ -5,6 +5,8 @@ import { FaBars } from "react-icons/fa";
 
 import {Outlet} from "react-router-dom";
 import PerfectScrollbar from 'react-perfect-scrollbar'
+import Language from '../Header/Language';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 // import { ToastContainer} from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 const Admin = (props) => {
@@ -16,7 +18,20 @@ const Admin = (props) => {
             </div>
             <div className='admin-content'>
                 <div className='admin-header'>
-                    <FaBars onClick={() => setCollapse(!collapsed)} />
+                    <span onClick={() => setCollapse(!collapsed)} >
+                        <FaBars className='leftside'/>
+                    </span>
+
+                    <div className='rightside'>
+                        <Language/>
+                        <NavDropdown title="Setting" id="basic-nav-dropdown">
+                            {/* <NavDropdown.Item>Log in</NavDropdown.Item> */}
+                            <NavDropdown.Item>Profile</NavDropdown.Item>
+                            <NavDropdown.Item
+                            >Log out</NavDropdown.Item>
+                        </NavDropdown>
+                    </div>
+                
                 </div>
 
                 <div className='admin-main'>

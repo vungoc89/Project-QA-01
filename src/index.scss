@@ -9,6 +9,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .languages{
+
+    .dropdown-toggle::after{
+      display: none !important;
+    }
+  }
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;

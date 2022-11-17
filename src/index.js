@@ -18,6 +18,9 @@ import Layout from './Layout';
 
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import "react-awesome-lightbox/build/style.css";
+
+// import i18n (needs to be bundled ;))
+import i18n from './components/utils/i18n';
 // import { Provider } from 'react-redux';
 // import App from './App';
 // import User from './components/User/User';

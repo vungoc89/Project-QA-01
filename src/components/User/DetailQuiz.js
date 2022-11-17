@@ -51,6 +51,7 @@ const DetailQuiz = () => {
                 // console.log('item answer: ', item.answers );
                 item.answers.isSelected = false;
             })
+            answers = _.orderBy(answers, ['id'], ['asc']);
             // console.log('value: ', value, 'key: ', key );
 
                 // return { questionId: key, data: value } //RENAME : questionId = key , data = value
@@ -179,6 +180,8 @@ const DetailQuiz = () => {
                 <RightContent
                 dataQuiz = {dataQuiz}
                 handleFinishQuiz = {handleFinishQuiz}
+                setIndex={setIndex}
+                
                 />
            </div>
            <ModalResult
